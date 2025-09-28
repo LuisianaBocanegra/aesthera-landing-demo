@@ -1,0 +1,102 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.95);
+  background-color: #000000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+  font-family: inherit;
+}
+
+img {
+  animation: float 3s ease-in-out infinite;
+  width: 80px;
+  height: 80px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+.hey-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(270deg, #ff4d4d, #ffcc00, #00ff99, #3399ff, #cc66ff, #ff4d4d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% 200%;
+  animation: gradientMove 10s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.custom-input {
+  background-color: black;
+  border: 1px solid white;
+  color: #cccccc;
+  padding: 12px 16px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.custom-input::placeholder {
+  color: #cccccc;
+  opacity: 1;
+}
+
+.signup-button {
+  background-color: #cccccc;
+  color: black;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  border: none;
+  width: fit-content;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.signup-button:hover {
+  background-color: #e0e0e0;
+}
